@@ -1,5 +1,6 @@
 package main;
 
+import gravedad.MovimientoPlanetario;
 import planetas.*;
 
 
@@ -38,11 +39,18 @@ public class Start {
 			}
 		}
 		
+		System.out.println("\n\n");
 		
+		MovimientoPlanetario gravedadPlanetaria[] = new MovimientoPlanetario[2];
+		gravedadPlanetaria[0] = tierra;
+		gravedadPlanetaria[1] = luna;
 		
-		
-		
-		
+		for(MovimientoPlanetario mp:gravedadPlanetaria) {
+			
+			System.out.println(mp.duracionAnio());
+			System.out.println(mp.duracionDias());
+			System.out.println("---------------------");
+		}
 		
 		
 		
