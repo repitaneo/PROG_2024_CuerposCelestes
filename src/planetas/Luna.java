@@ -1,7 +1,16 @@
 package planetas;
 
-public class Luna extends CuerpoCeleste {
+import gravedad.MovimientoPlanetario;
 
+public class Luna extends CuerpoCeleste 
+	implements MovimientoPlanetario {
+
+	
+	public static final float TRASLACION = 1234523.4f;
+	public static final float ROTACION = 34523.4f;
+	public static final int DIA = 29;
+	public static final int ANIO = 29;
+	
 	
 	private double distanciaPlaneta;
 	
@@ -49,6 +58,27 @@ public class Luna extends CuerpoCeleste {
 	public String toString() {
 		return "Luna [{" + distanciaPlaneta + "} " + getNombre() + " ("
 				+ getMasa() + ")]";
+	}
+
+
+
+
+
+	@Override
+	public float velocidadTraslacion() {
+		return Luna.TRASLACION;
+	}
+	@Override
+	public float velocidadRotacion() {
+		return Luna.ROTACION;
+	}
+	@Override
+	public int duracionDias() {
+		return Luna.DIA;
+	}
+	@Override
+	public int duracionAnio() {
+		return Luna.ANIO;
 	}
 
 	
