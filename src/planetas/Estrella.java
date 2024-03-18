@@ -22,7 +22,12 @@ public class Estrella extends CuerpoCeleste {
 		}
 		else this.brillo = brillo;
 	}
-
+	public void setMasa(double masa) { 
+		if(masa<50000000000d) {
+			super.setMasa(50000000000d);
+		}
+		else super.setMasa(masa);
+	}
 
 
 
