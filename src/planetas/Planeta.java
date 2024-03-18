@@ -1,9 +1,14 @@
 package planetas;
 
-public class Planeta extends CuerpoCeleste {
+public class Planeta extends CuerpoCeleste implements
+	gravedad.MovimientoPlanetario {
 
 	private int lunas;
 	
+	public static final float TRASLACION = 43534543.4f;
+	public static final float ROTACION = 34534534.4f;
+	public static final int DIA = 24;
+	public static final int ANIO = 365;	
 	
 	public Planeta(String nombre, double masa, int lunas) {
 		
@@ -43,6 +48,24 @@ public class Planeta extends CuerpoCeleste {
 	public String toString() {
 		return "Planeta [{" + lunas + "} " + getNombre() + " ("
 				+ getMasa() + ")]";
+	}
+
+
+	@Override
+	public float velocidadTraslacion() {
+		return Planeta.TRASLACION;
+	}
+	@Override
+	public float velocidadRotacion() {
+		return Planeta.ROTACION;
+	}
+	@Override
+	public int duracionDias() {
+		return Planeta.DIA;
+	}
+	@Override
+	public int duracionAnio() {
+		return Planeta.ANIO;
 	}	
 	
 }
