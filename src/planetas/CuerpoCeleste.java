@@ -1,6 +1,6 @@
 package planetas;
 
-public abstract class  CuerpoCeleste {
+public abstract class CuerpoCeleste {
 
 	
 	private String nombre;
@@ -10,8 +10,11 @@ public abstract class  CuerpoCeleste {
 	public CuerpoCeleste(String nombre, double masa) {
 		super();
 		this.nombre = nombre;
-		this.masa = masa;
+		setMasa(masa);
 	}
+	
+	
+	public abstract int tipoCuerpo();
 	
 	
 	public String getNombre() {
