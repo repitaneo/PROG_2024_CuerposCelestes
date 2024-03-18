@@ -1,10 +1,10 @@
 package planetas;
 
-public class Sol extends CuerpoCeleste {
+public class Estrella extends CuerpoCeleste {
 
 	private int brillo;
 	
-	public Sol(String nombre, double masa,int brillo) {
+	public Estrella(String nombre, double masa,int brillo) {
 		super(nombre, masa);
 		setBrillo(brillo);
 	}
