@@ -32,5 +32,12 @@ public class Sol extends CuerpoCeleste {
 		
 		return CuerpoCeleste.CODIGO_SOL;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "Sol [{" + brillo + "} " + getNombre() + " ("
+				+ getMasa() + ")]";
+	}	
 
 }

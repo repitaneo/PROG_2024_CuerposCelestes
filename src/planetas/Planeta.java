@@ -39,4 +39,10 @@ public class Planeta extends CuerpoCeleste {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "Planeta [{" + lunas + "} " + getNombre() + " ("
+				+ getMasa() + ")]";
+	}	
+	
 }

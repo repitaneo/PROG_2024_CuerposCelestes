@@ -41,4 +41,17 @@ public class Luna extends CuerpoCeleste {
 		return CuerpoCeleste.CODIGO_LUNA;
 	}
 
+
+
+
+
+	@Override
+	public String toString() {
+		return "Luna [{" + distanciaPlaneta + "} " + getNombre() + " ("
+				+ getMasa() + ")]";
+	}
+
+	
+	
+	
 }
