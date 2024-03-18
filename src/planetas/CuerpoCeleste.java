@@ -2,6 +2,12 @@ package planetas;
 
 public abstract class CuerpoCeleste {
 
+	public static final int CODIGO_PLANETA = 100; 
+	public static final int CODIGO_LUNA = 200; 
+	public static final int CODIGO_SOL = 300; 
+	public static final int CODIGO_PLANETOIDE = 400; 
+	public static final int CODIGO_GEMA_DEL_INFINITO = 500; 
+	public static final int CODIGO_ASTEROIDE = 600; 
 	
 	private String nombre;
 	private double masa;	
